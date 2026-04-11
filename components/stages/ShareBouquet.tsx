@@ -40,7 +40,7 @@ export default function ShareBouquet() {
     }
 
     const bouquetId = data[0].id;
-    const fullLink = `${window.location.origin}/bouquet/${bouquetId}`;
+    const fullLink = `${window.location.origin}/bouquet/${short_id}`;
     setShareLink(fullLink);
     setIsLoading(false);
   };

@@ -17,7 +17,7 @@ export default async function BouquetPage(props: Params) {
   const { data, error } = await supabase
     .from("bouquets")
     .select()
-    .eq("id", id)
+    .eq("short_id", id)
     .single();
 
   if (error || !data) {
