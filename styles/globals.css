@@ -83,3 +83,21 @@
     @apply bg-background text-foreground;
   }
 }
+/* REMOVE ALL ARTIFACTS DURING CAPTURE */
+.clean-capture * {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Prevent rendering glitches */
+.clean-capture {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix image layering */
+.clean-capture img {
+  image-rendering: auto !important;
+  backface-visibility: hidden;
+}
