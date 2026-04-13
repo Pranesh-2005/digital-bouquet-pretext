@@ -122,29 +122,33 @@ export default function Bouquet({
           </div>
         </div>
       </div>
-      <div className="text-center max-w-sm text-sm mx-auto">
+      <div className="mx-auto max-w-sm text-sm text-center">
         <div>
-          {/* White card container with black border */}
-          <div className="bg-white border-[1.5px] border-black p-8 mx-auto -translate-y-[50px] -rotate-2 hover:-rotate-2 transition-all duration-300">
+          {/* White card */}
+          <div className="bg-white border-[1.5px] border-black p-8 mx-auto -translate-y-[50px] -rotate-2 relative z-20">
+
             <div className="space-y-4">
-              <div className="flex flex-row items-left justify-left gap-2">
-                <p className="border-none bg-transparent focus:outline-none focus:ring-0">
-                  Dear {bouquet.letter.recipient}
-                </p>
-              </div>
 
+              {/* Greeting */}
               <div className="text-left">
-                <p>{bouquet.letter.message}</p>
+                <p className="whitespace-nowrap">
+                  Dear {bouquet.letter.recipient},
+                </p>
               </div>
 
-              <div className="flex flex-col items-end justify-end gap-2">
-                <p className="border-none bg-transparent focus:outline-none focus:ring-0">
-                  Sincerely,
-                </p>
-                <p className="border-none bg-transparent focus:outline-none focus:ring-0">
-                  {bouquet.letter.sender}
+              {/* Message */}
+              <div className="text-left">
+                <p className="whitespace-pre-line break-words">
+                  {bouquet.letter.message}
                 </p>
               </div>
+
+              {/* Signature */}
+              <div className="text-right">
+                <p>Sincerely,</p>
+                <p>{bouquet.letter.sender}</p>
+              </div>
+
             </div>
           </div>
         </div>
