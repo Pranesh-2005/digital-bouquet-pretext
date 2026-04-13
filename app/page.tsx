@@ -47,7 +47,17 @@ export default function Home() {
         </div>
 
         <p className="mt-10 text-sm text-gray-500">
-          made by @mikan
+          <Link
+            href="https://x.com/pau_wee_"
+          >
+            made by @PAU_WEE_
+          </Link>
+          
+          <Link
+            href="https://github.com/Pranesh-2005"
+          >
+              <br/> enhanced by @Pranesh
+          </Link>
         </p>
       </div>
     </div>
