@@ -22,7 +22,13 @@ export default function Home() {
           priority
         />
         <p className="my-6 text-sm md:mb-6 md:-mt-6">
-          beautiful flowers <br /> delivered digitally
+          beautiful flowers <br /> delivered digitally <br />
+          This is <Link
+            href="https://x.com/pau_wee_"
+          >
+          @PAU_WEE_
+          </Link>
+          &nbsp;version with extra save as Png feature.
         </p>
         <div className="flex flex-col justify-center items-center">
           <Link
